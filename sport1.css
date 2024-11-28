@@ -1,0 +1,169 @@
+﻿header img {
+    width: 100px;
+    height: 100px;
+    text-align: left;
+}
+
+nav {
+    text-align: right;
+    margin: 30px;
+    font-size: 24px;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #032010;
+    color: #333;
+}
+
+header { /* Цвет шапки */
+    color: white;
+    padding: 20px;
+    display: flex; /* Используем flexbox для выравнивания элементов */
+    align-items: center; /* Выравниваем элементы по центру по вертикали */
+    justify-content: space-between; /* Распределяем пространство между элементами */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для выделения */
+    z-index: 10;
+    position: sticky; /* Ключевое свойство */
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline;
+        margin: 0 15px;
+    }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+            nav ul li a:hover {
+                background-color: #0b7dda; /* Цвет при наведении */
+            }
+.container {
+    display: flex; /* Используем flexbox для расположения элементов в строку */
+    justify-content: space-between; /* Распределяем пространство между секциями */
+    padding: 20px; /* Отступы вокруг контейнера */
+    text-align: center;
+}
+.hero {
+    flex: 1; /* Секция hero занимает 1 часть доступного пространства */
+    margin-right: 20px; /* Отступ справа, чтобы отделить от контента */
+    background-color: #384F42; /* Цвет фона для секции hero */
+    color: white; /* Цвет текста */
+    padding: 20px; /* Отступы внутри секции */
+    border-radius: 8px; /* Закругленные углы */
+    line-height: 1.5;
+    font-size:16px;
+    text-align:justify;
+}
+.hero h1 {
+    text-align:center;
+}
+
+.content {
+    flex:1;
+    background-color: #C5F543; /* Цвет фона для секции контента */
+    padding: 20px; /* Отступы внутри секции */
+    border-radius: 8px; /* Закругленные углы */
+    height: 600px;
+    color:black;
+}
+footer {
+    background-color: #f2f2f2; /* Светло-серый фон */
+    padding: 20px; /* Отступы от краев */
+    text-align: right; /* Текст по центру */
+    font-family: sans-serif; /* Без засечек */
+    color: #333; /* Темно-серый текст */
+    border-top: 1px solid #ddd; /* Тонкая линия сверху */
+}
+
+    footer p {
+        margin-bottom: 5px; /* Отступ между абзацами */
+    }
+
+        footer p:last-child {
+            margin-bottom: 0; /* Убираем отступ у последнего абзаца */
+        }
+
+    /* Дополнительные стили, если нужно: */
+    footer a {
+        color: #007bff; /* Синяя ссылка */
+        text-decoration: none; /* Убираем подчеркивание */
+    }
+
+        footer a:hover {
+            text-decoration: underline; /* Подчеркивание при наведении */
+        }
+
+.scrolling-text {
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 36px;
+    color: white;
+    font-weight: 900;
+}
+
+    .scrolling-text span {
+        display: inline-block;
+        padding-left: 100%;
+        animation: scroll 6s linear infinite;
+    }
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+.content img {
+    height: 70px;
+    width: 250px;
+    text-align: center;
+}
+
+.content p {
+    display: flex;
+    align-items:center;
+    text-align: justify;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Распределяет элементы по краям */
+    align-items: center; /* Выравнивает по вертикали */
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.footer-content {
+    flex: 1; /* Занимает доступное пространство */
+    text-align: left;
+}
+
+.sponsor-logos {
+    display: flex;
+    gap: 30px; /* Отступ между изображениями */
+}
+
+.sponsor-logo {
+    max-height: 70px; /* Ограничиваем высоту изображений */
+    max-width: 150px;
+}
